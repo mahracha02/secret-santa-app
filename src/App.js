@@ -67,19 +67,21 @@ function Snowflakes() {
         <img className="background" src="/images/background.jpg" alt="Background"  />
 
         <div className="container my-5">
-        <h1 className="text-center text-white">
-          <span className="title">
-              S
-              <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              ecret
-          </span>
-          &nbsp;
-          <span className="title">
-              S
-              <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              anta version développeur
-          </span>
-        </h1>
+          <div className="text-center text-white title-container">
+            <h1 className="title">
+              <span className="letter">
+                S
+                <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
+              </span>ecret
+            </h1>
+            <h1 className="title">
+              <span className="letter">
+                S
+                <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
+              </span>anta
+            </h1>
+          </div>
+
 
         <ParticipantList
           participants={participants}
