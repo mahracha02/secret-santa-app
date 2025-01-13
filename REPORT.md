@@ -45,5 +45,5 @@
 ## Prochaines Étapes
 - Optimisation du code pour une meilleure lisibilité et maintenabilité.
 - Amélioration de la compatibilité mobile.
-- Ajout de tests unitaires pour garantir la stabilité des fonctionnalités.
+- Ajout de tests unitaires pour garantir la stabilité des fonctionnalités. 
 
