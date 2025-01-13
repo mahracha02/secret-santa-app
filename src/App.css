@@ -92,5 +92,20 @@ h1:after {
   transform: rotate(-40deg); /* Inclinaison */
 }
 
+/* Mode sombre */
+body.dark-mode {
+  background: #121212; /* Fond sombre */
+  color: #fff; /* Texte clair */
+}
+
+/* Autres éléments spécifiques au mode sombre */
+h1.dark-mode {
+  color: #fff;
+}
+
+button.dark-mode {
+  background-color: #444;
+  color: white;
+}
 
 

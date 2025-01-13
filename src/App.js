@@ -8,6 +8,12 @@ import "./App.css";
 function App() {
   const [participants, setParticipants] = useState([]);
   const [pairs, setPairs] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark-mode', isDarkMode); // Applique ou enlève la classe dark-mode
+  };
 
   const addParticipant = (name) => {
     if (name.trim() && !participants.includes(name)) {
@@ -66,20 +72,26 @@ function Snowflakes() {
       <Snowflakes />
         <img className="background" src="/images/background.jpg" alt="Background"  />
 
+        <button onClick={toggleDarkMode}>
+          {isDarkMode ? "Passer en mode clair🌞" : "Passer en mode sombre🌙"}
+        </button>
+
+          
+
         <div className="container my-5">
-        <h1 className="text-center text-white">
-          <span className="title">
-              S
-              <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              ecret
-          </span>
-          &nbsp;
-          <span className="title">
-              S
-              <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              anta version développeur
-          </span>
-        </h1>
+          <h1 className="text-center text-white">
+            <span className="title">
+                S
+                <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
+                ecret
+            </span>
+            &nbsp;
+            <span className="title">
+                S
+                <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
+                anta version développeur
+            </span>
+          </h1>
 
         <ParticipantList
           participants={participants}
