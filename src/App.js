@@ -77,7 +77,7 @@ function Snowflakes() {
           <span className="title">
               S
               <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              anta 
+              anta version développeur
           </span>
         </h1>
 
