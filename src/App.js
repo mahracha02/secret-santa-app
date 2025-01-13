@@ -62,45 +62,41 @@ function Snowflakes() {
 
 
   return (
-    <div>
+    <div className="app-container">
       <Snowflakes />
-        <img className="background" src="/images/background.jpg" alt="Background"  />
+      <img className="background" src="/images/background.jpg" alt="Background" />
 
-        <div className="container my-5">
-        <h1 className="text-center text-white">
-          <span className="title">
-              S
-              <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              ecret
+      <div className="content-container">
+        <h1 className="title text-center">
+          <span>
+            S
+            <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
+            ecret
           </span>
-          &nbsp;
-          <span className="title">
-              S
-              <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
-              anta version développeur
+          <span>
+            S
+            <img src="/images/santa_hat.png" alt="Santa Hat" className="santa-hat" />
+            anta v1.0
           </span>
         </h1>
 
-        <ParticipantList
-          participants={participants}
-          addParticipant={addParticipant}
-          removeParticipant={removeParticipant}
-        />
+        <ParticipantList participants={participants} addParticipant={addParticipant} removeParticipant={removeParticipant} />
+        
         {participants.length > 1 && (
           <div className="text-center my-4">
-            <button className="btn btn-success" onClick={generatePairs}>
+            <button className="btn btn-primary" onClick={generatePairs}>
               Commencer le Secret Santa
             </button>
           </div>
         )}
+
         <SecretSantaPairs pairs={pairs} />
       </div>
 
       <Snowflakes />
     </div>
-    
   );
-}
+};
 
 
 
